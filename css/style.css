@@ -106,20 +106,20 @@ nav ul li a:hover::after{
   content: '';
   width: 0;
   height: 3px;
-  /* background-color: red; */
+  background-color: red;
   position: absolute;
   left: 0;
   bottom: -6px;
   transition: 0.5s;
 }
-.tab-links:hover::after{
+/* .tab-links:hover::after{
   width: 100%;
   background-color: red;
 
-}
+} */
 .tab-links.active-link::after{
   width: 100%;
-  background-color: green;
+  /* background-color: green; */
 }
 .tab-contents ul li{
   list-style: none;

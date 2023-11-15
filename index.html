@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./js/app.js"></script>
+  <!-- <script src="./js/app.js"></script> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
@@ -42,11 +42,11 @@
             quae nesciunt rerum dolores illum animi magnam dolor sit. Voluptatum, beatae! Optio sit ullam pariatur ex
             exercitationem?</p>
           <div class="tab-titles">
-            <button class="tab-links active-link">Skills</button>
-            <button class="tab-links">Experience</button>
-            <button class="tab-links">Education</button>
+            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+            <p class="tab-links" onclick="openTab('education')">Education</p>
           </div>
-          <div class="tab-contents" id="skills">
+          <div class="tab-contents active-tab" id="skills">
             <ul>
               <li><span>Software Developer</span><br>HTML</li>
               <li><span>Software Developer</span><br>HTML</li>
@@ -55,22 +55,36 @@
           </div>
           <div class="tab-contents" id="experience">
             <ul>
-              <li><span>Software Developer</span><br>HTML</li>
-              <li><span>Software Developer</span><br>HTML</li>
-              <li><span>Software Developer</span><br>HTML</li>
+              <li><span>GA</span><br>General Assembly</li>
+              <li><span>Kgisl</span><br>Software tester</li>
+              <li><span>HCL</span><br>Software test</li>
             </ul>
           </div>
           <div class="tab-contents" id="education">
             <ul>
-              <li><span>Software Developer</span><br>HTML</li>
-              <li><span>Software Developer</span><br>HTML</li>
-              <li><span>Software Developer</span><br>HTML</li>
+              <li><span>General Assembly</span><br>Software Engineering Bootcamp</li>
+              <li><span>Bachelor of Eng</span><br>Anna Univ</li>
+              <li><span>High School</span><br>Laurel</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+  <script>
+    let tabLinks=document.getElementsByClassName("tab-links")
+    let tabContents=document.getElementsByClassName("tab-contents")
+    
+    function openTab(tabName){
+      for(tabLink of tabLinks){
+        tabLink.classList.remove("active-link")
+      }
+      for(tabContent of tabContents){
+        tabContent.classList.remove("active-tab")
+      }
+      event.currentTarget.classList.add("active-link")
+      document.getElementById(tabName).classList.add("active-tab")
+    }
+  </script>
 </body>
 </html>

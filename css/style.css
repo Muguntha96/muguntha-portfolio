@@ -4,22 +4,29 @@
   font-family: 'Roboto Slab', serif;
   box-sizing: border-box;
 }
-
+html,body{
+  scroll-behavior: smooth;
+}
 body{
-  background-color: gray;
-  color: #fff;
+  background-color: #adb5bd;
+  color:black;
 }
 #header{
   width: 100%;
   height:100vh;
-  background-image: url(../images/background2.jpg);
-  background-size:cover;
-  background-position: center;
+  background-image: url(../images/muguntha-cover.png);
+  background-size: 550px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 90%;
+  background-position-y: center;
+  
 }
 .container{
   padding: 10px 10%;
 }
 nav{
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,14 +35,17 @@ nav{
 .logo{
   width: 140px;
 }
+nav ul{
+  margin-left: 600px;
+}
 nav ul li{
   display: inline-block;
   list-style: none;
   margin: 10px 20px;
-}
+} 
 
 nav ul li a{
-  color: red;
+  color:black;
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -66,10 +76,14 @@ nav ul li a:hover::after{
 .header-text h1 span{
   color: red;
 }
+.header-text p{
+  margin: 10px;
+  text-decoration: solid;
+}
 /* about */
 #about{
   padding: 80px 0;
-  color:wheat ;
+  color:black ;
 }
 .row{
   display: flex;
@@ -136,13 +150,11 @@ nav ul li a:hover::after{
   display:block ;
 }
 /* Projects */
-#projects{
+#projects,#skills{
   display: flex;
   justify-content: space-around;
   padding: 50px 0;
   align-items: center;
-  /* border: 2px solid black; */
-  /* width: 130%; */
 }
 .projects-list{
   display:grid;
@@ -233,6 +245,51 @@ nav ul li a:hover::after{
 nav .fa-solid{
   display: none;
 }
+.social-icons a i{
+  font-size: 50px;
+}
+.contact-left p{
+  font-size: 20px;
+}
+.skills-list{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 30px;
+  padding: 20px;
+  width: 1000px;
+  margin: 20px;
+  height: 100%;
+  border: 2px solid black;
+}
+.skill-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  border: 2px solid black;
+  padding: 0;
+  height: 400px;
+}
+.skill-card div ul{
+  display: flex;
+  flex-direction: column;
+  
+  list-style-type: disc;
+  /* list-style-position:inherit; */
+  margin: 15px 40px;
+
+  padding: 0;
+}
+.skill-card div ul li{
+  margin-bottom: 10px;
+  /* align-items: center; */
+}
+.skill-card div ul li p{
+  font-size: 18px;
+  align-items: center;
+  text-align:start;
+}
+
 @media only screen and (max-width:600px){
   #header{
     background-image: url(../images/background.png);
@@ -306,10 +363,22 @@ nav .fa-solid{
     height: 100%;
     flex-basis: 60%;
     margin-left: 5px;
+    justify-content: space-evenly;
   }
   .tab-links{
     font-size: 16px;
     margin-right: 20px;
     justify-content: center;
   }
-}
+  #projects{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    align-items: center;
+    /* border: 2px solid black; */
+    /* width: 130%; */
+  }
+  .projects-list{
+    width: 100%;
+  }
+  }

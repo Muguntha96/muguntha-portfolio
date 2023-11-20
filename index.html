@@ -21,18 +21,18 @@
       <nav>
         <img src="./images/background.png" alt="Logo Image" class="logo">
         <ul id="sidemenu">
-          <li><a href="/about">About</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="Resume.pdf/muguntha durairaj - Resume DRAFT .pdf">Resume</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/skills">Skills</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
           <i class="fa-solid fa-xmark" id="xmark" onclick="closeMenu()"></i>
         </ul>
         <i class="fa-solid fa-bars" id="open-icon" onclick="openMenu()"></i>
       </nav>
       <div class="header-text">
+        <h1>Hi,I am <span>Muguntha <br> Duraraj </span> from Canada</h1>
         <p>Full Stack Software Developer</p>
-        <h1>Hi,I am <span>Muguntha</span> <br> Duraraj from Canada</h1>
       </div>
     </div>
   </div>
@@ -41,37 +41,31 @@
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-          <img src="images/background1.jpg" alt="About Image">
+          <img src="images/muguntha-about.png" alt="About Image">
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About me</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam dolorum, consequatur laborum blanditiis
-            quae nesciunt rerum dolores illum animi magnam dolor sit. Voluptatum, beatae! Optio sit ullam pariatur ex
-            exercitationem?</p>
+          <p>My journey in software development began with a curiosity for flawless code. Through testing experience and a recent software engineering boot camp, I'm poised to contribute effectively to innovative projects.</p>
           <div class="tab-titles">
-            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+            <p class="tab-links active-link" onclick="openTab('experience')">Experience</p>
             <p class="tab-links" onclick="openTab('education')">Education</p>
           </div>
-          <div class="tab-contents active-tab" id="skills">
+          <div class="tab-contents active-tab" id="experience">
             <ul>
-              <li><span>Software Developer</span><br>HTML</li>
-              <li><span>Software Developer</span><br>HTML</li>
-              <li><span>Software Developer</span><br>HTML</li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="experience">
-            <ul>
-              <li><span>GA</span><br>General Assembly</li>
-              <li><span>Kgisl</span><br>Software tester</li>
-              <li><span>HCL</span><br>Software test</li>
+              <li><span>Software Engineering Fellow  
+              </span>- (Aug 2023 – Present)<br>General Assembly</li>
+              <li><span>Senior QA Engineer</span>- (Jun 2022 – Apr 2023)
+                <br>KGISL.Ltd,Coimbatore,India</li>
+              <li><span>QA Engineer</span>- (Feb 2020 –Aug 2021)
+                <br>HCl Technologies,Chennai,India</li>
+              <li><span>QA Engineer</span> - (Jan 2019 –Jan 2020)
+                <br>ISON.Ltd,Chennai,India</li>
             </ul>
           </div>
           <div class="tab-contents" id="education">
             <ul>
-              <li><span>General Assembly</span><br>Software Engineering Bootcamp</li>
-              <li><span>Bachelor of Eng</span><br>Anna Univ</li>
-              <li><span>High School</span><br>Laurel</li>
+              <li><span>Software Engineering Immersive course </span><br>General Assembly</li>
+              <li><span>Bachelor’s in Electronics and Communication Engineering </span><br>Anna University,India,</li>
             </ul>
           </div>
         </div>
@@ -126,7 +120,61 @@
       </div>
     </div>
   </div>
-
+  <!-- Skills -->
+  <div id="sills">
+    <div class="container">
+      <h1 class="sub-title">Skills</h1>
+      <div class="skills-list">
+        <div class="skill-card">
+          <h3>Technologies & Database</h3>
+          <div class="tech">
+            <ul>
+              <li><p>Java</p></li>
+              <li><p>Python</p></li>
+              <li><p>HTML5</p></li>
+              <li><p>CSS3</p></li>
+              <li><p>JavaScript</p></li>
+              <li><p>MongoDB</p></li>
+              <li><p>Mongoose</p></li>
+              <li><p>PostgreSQL</p></li>
+              <li><p>Node.js</p></li>
+          </ul>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Frameworks & Services</h3>
+          <div class="framework">
+            <ul>
+              <li><p>React</p></li>
+              <li><p>Django</p></li>
+              <li><p>Express</p></li>
+              <li><p>Selenium</p></li>
+              <li><p>TestNG</p></li>
+              <li><p>POM and Data Driven</p></li>
+              <li><p>Google OAuth</p></li>
+              <li><p>JWT</p></li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Tools & Methodologies</h3>
+          <div class="tool">
+            <ul>
+              <li><p>Git/GitHub</p></li>
+              <li><p>Maven</p></li>
+              <li><p>Postan</p></li>
+              <li><p>RESTful Routing</p></li>
+              <li><p>Agile</p></li>
+              <li><p>Scrum</p></li>
+              <li><p>Functional Testing</p></li>
+              <li><p>API Testing</p></li>
+              <li><p>Manual Testing</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Contact -->
   <div id="contact">
     <div class="container">
@@ -142,18 +190,7 @@
             
           </div>
         </div>
-        <!-- <div class="contact-right">
-          <form action="">
-            <label for="name">Name :</label>
-            <input type="text" id="name" name="Name" placeholder="Your Name" required>
-            <label for="email">Email :</label>
-            <input type="text" id="email" name="Email" placeholder="Your Email" required>
-            <label for="message">Message :</label>
-            <textarea name="Message" id="message" rows="10" placeholder="Your Message"></textarea>
-            <button type="submit">Submit</button>
-          </form>
-        </div> -->
-        </div>
+      </div>
     </div>
   </div>
 
@@ -180,6 +217,20 @@
     function closeMenu(){
       sidemenu.style.right="-200px"
     }
+  </script>
+  <script>
+    // Add an event listener to each navigation link
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        // Get the target section's ID from the href attribute
+        const targetId = this.getAttribute('href').substring(1);
+  
+        // Scroll to the target section
+        document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
   </script>
 </body>
 </html>

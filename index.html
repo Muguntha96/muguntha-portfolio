@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/797996f0c1.js" crossorigin="anonymous"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-  <!-- <script src="./js/app.js" ></script> -->
+  <script src="./js/app.js" ></script>
   <link rel="stylesheet" href="./css/style.css">
   <title>Muguntha Durairaj</title>
 </head>
@@ -19,13 +19,13 @@
   <div id="header">
     <div class="container">
       <nav>
-        <img src="./images/background.png" alt="Logo Image" class="logo">
+        <img src="./images/logo3.png" alt="Logo Image" class="logo">
         <ul id="sidemenu">
           <li><a href="#about">About</a></li>
-          <li><a href="Resume.pdf/muguntha durairaj - Resume DRAFT .pdf">Resume</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="resume/MugunthaDurairaj-Resume.docx.pdf" target="_blank">Resume</a></li>
           <i class="fa-solid fa-xmark" id="xmark" onclick="closeMenu()"></i>
         </ul>
         <i class="fa-solid fa-bars" id="open-icon" onclick="openMenu()"></i>
@@ -80,33 +80,39 @@
         <div class="project-card">
           <img src="images/matching-card.png" class="project-img" alt="Matching Card MemoryGame">
           <div class="layer bg-one">
-            <h3><a href="#">Matching Card MemoryGame</a></h3>
-            <p>HTML,CSS,PYTHON,SQL</p>
-            <a href=""><i class="fa-brands fa-github" style="color: #090101;"></i></a>
+            <h3><a href="https://matching-card-memory-games.netlify.app/">Casino Cards Memory</a></h3>
+            <p>HTML5,CSS,JavaScript</p>
+            <a href="https://github.com/Muguntha96/matching-card-memory-game"><i class="fa-brands fa-github" style="color: #090101;"></i></a>
           </div>
         </div>
         <div class="project-card bg-two">
           <img src="images/emp.png" class="project-img" alt="Employee Management Portal">
           <div class="layer">
-            <h3><a href="#">Employee Management Portal</a></h3>
-            <p>HTML,CSS,PYTHON,SQL</p>
-            <a href=""><i class="fa-brands fa-github" style="color: #090101;"></i></a>
+            <h3><a href="https://employee-management-software.fly.dev/">Employee Management Portal</a></h3>
+            <p>HTML5,CSS,Express,Node.js,MongoDb
+            </p>
+            <a href="https://github.com/Muguntha96/employee-management-portal"><i class="fa-brands fa-github" style="color: #090101;"></i></a>
           </div>
         </div>
         <div class="project-card bg-three">
           <img src="images/wandr.png" class="project-img" alt="The Wandr">
           <div class="layer">
-            <h3><a href="#">The Wandr</a></h3>
-            <p>REACT,NODEJS,HTML,CSS,JS</p>
-            <a href=""><i class="fa-brands fa-github" style="color: #090101;"></i></a>
+            <h3><a href="https://wandr-sei.netlify.app/">The Wandr</a></h3>
+            <p>         
+              HTML5,CSS,Express,Node.js,MongoDb,<br>React
+            </p>
+            <a href="https://github.com/Muguntha96/wandr-front-end"><i class="fa-brands fa-github wandr" style="color: #090101;"></i></a>
+            <a href="https://github.com/Muguntha96/wandr-back-end"><i class="fa-brands fa-github wandr" style="color: #090101;"></i></a>
           </div>
         </div>
         <div class="project-card bg-four">
           <img src="images/soundsgood.png" class="project-img" alt="SoundsGood">
           <div class="layer">
-            <h3><a href="#">Soundsgood</a></h3>
-            <p>HTML,CSS,PYTHON,SQL</p>
-            <a href=""><i class="fa-brands fa-github" style="color: #090101;"></i></a>
+            <h3><a href="https://soundsgood.fly.dev/">Soundsgood</a></h3>
+            <p>
+              HTML5,CSS,Python,Django,PostgreSQL
+            </p>
+            <a href="https://github.com/Muguntha96/soundsgood"><i class="fa-brands fa-github" style="color: #090101;"></i></a>
           </div>
         </div>
         <!-- <div class="project-card bg-five">
@@ -184,9 +190,9 @@
           <p><iconify-icon icon="tabler:phone-filled" style="color: green;"></iconify-icon> +1 902-399-5007</p>
           <div class="social-icons">
             <a href="mailto:muguntharamkumar1996@gmail.com"><iconify-icon icon="logos:google-gmail" class="mail"></iconify-icon></a>
-            <a href=""><i class="fa-brands fa-github" style="color: #090101;"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin" style="color: #3477ea;"></i></a>
-            <a href=""><iconify-icon icon="simple-icons:leetcode" class="leet-code" style="color: black;"></iconify-icon></a>
+            <a href="https://github.com/Muguntha96"><i class="fa-brands fa-github" style="color: #090101;"></i></a>
+            <a href="https://www.linkedin.com/in/muguntha-durairaj/"><i class="fa-brands fa-linkedin" style="color: #3477ea;"></i></a>
+            <a href="https://leetcode.com/Muguntha/"><iconify-icon icon="simple-icons:leetcode" class="leet-code" style="color: black;"></iconify-icon></a>
             
           </div>
         </div>
@@ -217,20 +223,6 @@
     function closeMenu(){
       sidemenu.style.right="-200px"
     }
-  </script>
-  <script>
-    // Add an event listener to each navigation link
-    document.querySelectorAll('nav a').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-  
-        // Get the target section's ID from the href attribute
-        const targetId = this.getAttribute('href').substring(1);
-  
-        // Scroll to the target section
-        document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
-      });
-    });
   </script>
 </body>
 </html>

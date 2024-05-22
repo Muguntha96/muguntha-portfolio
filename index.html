@@ -1,121 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="./js/app.js"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      id="favicon"
+      rel="icon"
+      href="./images/favicon.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <script
+      src="https://kit.fontawesome.com/797996f0c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Muguntha Durairaj</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <script src="./js/app.js"></script> -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-  <link id="favicon" rel="icon" href="./images/favicon.png" type="image/png" sizes="32x32">
-  <script src="https://kit.fontawesome.com/797996f0c1.js" crossorigin="anonymous"></script>
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Muguntha Durairaj</title>
-</head>
-
-<body>
-  <div id="header">
-    <div class="container">
-      <nav>
-        <img src="./images/logo3.png" alt="Logo Image" class="logo">
-        <ul id="sidemenu">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="resume/MUGUNTHA DURAIRAJ.pdf" target="_blank">Resume</a></li>
-          <i class="fa-solid fa-xmark" id="xmark" onclick="closeMenu()"></i>
-        </ul>
-        <i class="fa-solid fa-bars" id="open-icon" onclick="openMenu()"></i>
-      </nav>
-      <div class="header-text">
-        <h1>Hi,I am <span>Muguntha <br> Duraraj </span> from Canada</h1>
-        <p>Full Stack Software Developer</p>
-      </div>
-    </div>
-  </div>
-  <!--About Me -->
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="about-col-1">
-          <img src="images/muguntha-about.png" alt="About Image">
-        </div>
-        <div class="about-col-2">
-          <h1 class="sub-title">About me</h1>
-          <p>My journey in software development began with a curiosity for flawless code. Through testing experience and a recent software engineering boot camp, I'm poised to contribute effectively to innovative projects.</p>
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="openTab('experience')">Experience</p>
-            <p class="tab-links" onclick="openTab('education')">Education</p>
-          </div>
-          <div class="tab-contents active-tab" id="experience">
-            <ul>
-              <li><span>Software Engineering Fellow  
-              </span>- (Aug 2023 – Present)<br>General Assembly</li>
-              <li><span>Senior QA Engineer</span>- (Jun 2022 – Apr 2023)
-                <br>KGISL.Ltd,Coimbatore,India</li>
-              <li><span>QA Engineer</span>- (Feb 2020 –Aug 2021)
-                <br>HCl Technologies,Chennai,India</li>
-              <li><span>QA Engineer</span> - (Jan 2019 –Jan 2020)
-                <br>ISON.Ltd,Chennai,India</li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="education">
-            <ul>
-              <li><span>Software Engineering Immersive course </span><br>General Assembly</li>
-              <li><span>Bachelor’s in Electronics and Communication Engineering </span><br>Anna University,India,</li>
-            </ul>
-          </div>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./images/logo3.png" alt="Logo Image" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="resume/MUGUNTHA DURAIRAJ.pdf" target="_blank">Resume</a>
+            </li>
+            <i class="fa-solid fa-xmark" id="xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" id="open-icon" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hi,I am
+            <span
+              >Muguntha <br />
+              Duraraj
+            </span>
+            from Canada
+          </h1>
+          <p>Full Stack Software Developer</p>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Projects -->
-  <div id="projects">
-    <div class="container">
-      <h1 class="sub-title">My Projects</h1>
-      <div class="projects-list">
-        <div class="project-card">
-          <img src="images/matching-card.png" class="project-img" alt="Matching Card MemoryGame">
-          <div class="layer bg-one">
-            <h3><a href="https://matching-card-memory-games.netlify.app/">Casino Cards Memory</a></h3>
-            <p>HTML5,CSS,JavaScript</p>
-            <a href="https://github.com/Muguntha96/matching-card-memory-game"><i class="fa-brands fa-github" style="color: #090101;"></i></a>
+    <!--About Me -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/muguntha-about.png" alt="About Image" />
           </div>
-        </div>
-        <div class="project-card bg-two">
-          <img src="images/emp.png" class="project-img" alt="Employee Management Portal">
-          <div class="layer">
-            <h3><a href="https://employee-management-software.fly.dev/">Employee Management Portal</a></h3>
-            <p>HTML5,CSS,Express,Node.js,MongoDb
-            </p>
-            <a href="https://github.com/Muguntha96/employee-management-portal"><i class="fa-brands fa-github" style="color: #090101;"></i></a>
-          </div>
-        </div>
-        <div class="project-card bg-three">
-          <img src="images/wandr.png" class="project-img" alt="The Wandr">
-          <div class="layer">
-            <h3><a href="https://wandr-sei.netlify.app/">The Wandr</a></h3>
-            <p>         
-              HTML5,CSS,Express,Node.js,MongoDb,<br>React
-            </p>
-            <a href="https://github.com/Muguntha96/wandr-front-end"><i class="fa-brands fa-github wandr" style="color: #090101;"></i></a>
-            <a href="https://github.com/Muguntha96/wandr-back-end"><i class="fa-brands fa-github wandr" style="color: #090101;"></i></a>
-          </div>
-        </div>
-        <div class="project-card bg-four">
-          <img src="images/soundsgood.png" class="project-img" alt="SoundsGood">
-          <div class="layer">
-            <h3><a href="https://soundsgood.fly.dev/">Soundsgood</a></h3>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
             <p>
-              HTML5,CSS,Python,Django,PostgreSQL
+              My journey in software development began with a curiosity for
+              flawless code. Through testing experience and a recent software
+              engineering boot camp, I'm poised to contribute effectively to
+              innovative projects.
             </p>
-            <a href="https://github.com/Muguntha96/soundsgood"><i class="fa-brands fa-github" style="color: #090101;"></i></a>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="experience">
+              <ul>
+                <li>
+                  <span>Software Engineering Fellow </span>- (Aug 2023 –
+                  Present)<br />General Assembly
+                </li>
+                <li>
+                  <span>Senior QA Engineer</span>- (Jun 2022 – Apr 2023)
+                  <br />KGISL.Ltd,Coimbatore,India
+                </li>
+                <li>
+                  <span>QA Engineer</span>- (Feb 2020 –Aug 2021) <br />HCl
+                  Technologies,Chennai,India
+                </li>
+                <li>
+                  <span>QA Engineer</span> - (Jan 2019 –Jan 2020)
+                  <br />ISON.Ltd,Chennai,India
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Software Engineering Immersive course </span
+                  ><br />General Assembly
+                </li>
+                <li>
+                  <span
+                    >Bachelor’s in Electronics and Communication Engineering </span
+                  ><br />Anna University,India,
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <!-- <div class="project-card bg-five">
+      </div>
+    </div>
+    <!-- Projects -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+          <div class="project-card">
+            <img
+              src="images/matching-card.png"
+              class="project-img"
+              alt="Matching Card MemoryGame"
+            />
+            <div class="layer bg-one">
+              <h3>
+                <a href="https://matching-card-memory-games.netlify.app/"
+                  >Casino Cards Memory</a
+                >
+              </h3>
+              <p>HTML5,CSS,JavaScript</p>
+              <a href="https://github.com/Muguntha96/matching-card-memory-game"
+                ><i class="fa-brands fa-github" style="color: #090101"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-card bg-two">
+            <img
+              src="images/emp.png"
+              class="project-img"
+              alt="Employee Management Portal"
+            />
+            <div class="layer">
+              <h3>
+                <a href="https://employee-management-software.fly.dev/"
+                  >Employee Management Portal</a
+                >
+              </h3>
+              <p>HTML5,CSS,Express,Node.js,MongoDb</p>
+              <a href="https://github.com/Muguntha96/employee-management-portal"
+                ><i class="fa-brands fa-github" style="color: #090101"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-card bg-three">
+            <img src="images/wandr.png" class="project-img" alt="The Wandr" />
+            <div class="layer">
+              <h3><a href="https://wandr-sei.netlify.app/">The Wandr</a></h3>
+              <p>HTML5,CSS,Express,Node.js,MongoDb,<br />React</p>
+              <a href="https://github.com/Muguntha96/wandr-front-end"
+                ><i class="fa-brands fa-github wandr" style="color: #090101"></i
+              ></a>
+              <a href="https://github.com/Muguntha96/wandr-back-end"
+                ><i class="fa-brands fa-github wandr" style="color: #090101"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-card bg-four">
+            <img
+              src="images/soundsgood.png"
+              class="project-img"
+              alt="SoundsGood"
+            />
+            <div class="layer">
+              <h3><a href="https://soundsgood.fly.dev/">Soundsgood</a></h3>
+              <p>HTML5,CSS,Python,Django,PostgreSQL</p>
+              <a href="https://github.com/Muguntha96/soundsgood"
+                ><i class="fa-brands fa-github" style="color: #090101"></i
+              ></a>
+            </div>
+          </div>
+          <!-- <div class="project-card bg-five">
           <img src="images/projectscover.jpg" class="project-img" alt="Wordle">
           <div class="layer">
             <h3><a href="#">Wordle</a></h3>
@@ -123,106 +190,126 @@
             <a href=""><i class="fa-brands fa-github" style="color: #090101;"></i></a>
           </div>
         </div> -->
-      </div>
-    </div>
-  </div>
-  <!-- Skills -->
-  <div id="skills">
-    <div class="container">
-      <h1 class="sub-title">Skills</h1>
-      <div class="skills-list">
-        <div class="skill-card">
-          <h3>Technologies & Database</h3>
-          <div class="tech">
-            <ul>
-              <li><p>Java</p></li>
-              <li><p>Python</p></li>
-              <li><p>HTML5</p></li>
-              <li><p>CSS3</p></li>
-              <li><p>JavaScript</p></li>
-              <li><p>MongoDB</p></li>
-              <li><p>Mongoose</p></li>
-              <li><p>PostgreSQL</p></li>
-              <li><p>Node.js</p></li>
-          </ul>
-          </div>
-        </div>
-        <div class="skill-card">
-          <h3>Frameworks & Services</h3>
-          <div class="framework">
-            <ul>
-              <li><p>React</p></li>
-              <li><p>Django</p></li>
-              <li><p>Express</p></li>
-              <li><p>Selenium</p></li>
-              <li><p>TestNG</p></li>
-              <li><p>POM and Data Driven</p></li>
-              <li><p>Google OAuth</p></li>
-              <li><p>JWT</p></li>
-            </ul>
-          </div>
-        </div>
-        <div class="skill-card">
-          <h3>Tools & Methodologies</h3>
-          <div class="tool">
-            <ul>
-              <li><p>Git/GitHub</p></li>
-              <li><p>Maven</p></li>
-              <li><p>Postan</p></li>
-              <li><p>RESTful Routing</p></li>
-              <li><p>Agile</p></li>
-              <li><p>Scrum</p></li>
-              <li><p>Functional Testing</p></li>
-              <li><p>API Testing</p></li>
-              <li><p>Manual Testing</p></li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Contact -->
-  <div id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="contact-left">
-          <h1 class="sub-title">Contact Me</h1>
-          <p><iconify-icon icon="tabler:phone-filled" style="color: green;"></iconify-icon> +1 902-399-5007</p>
-          <div class="social-icons">
-            <a href="mailto:muguntharamkumar1996@gmail.com"><iconify-icon icon="logos:google-gmail" class="mail"></iconify-icon></a>
-            <a href="https://github.com/Muguntha96"><i class="fa-brands fa-github" style="color: #090101;"></i></a>
-            <a href="https://www.linkedin.com/in/muguntha-durairaj/"><i class="fa-brands fa-linkedin" style="color: #3477ea;"></i></a>
-            <a href="https://leetcode.com/Muguntha/"><iconify-icon icon="simple-icons:leetcode" class="leet-code" style="color: black;"></iconify-icon></a>
-            
+    <!-- Skills -->
+    <div id="skills">
+      <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <div class="skills-list">
+          <div class="skill-card">
+            <h3>Technologies & Database</h3>
+            <div class="tech">
+              <ul>
+                <li><p>Java</p></li>
+                <li><p>Python</p></li>
+                <li><p>HTML5</p></li>
+                <li><p>CSS3</p></li>
+                <li><p>JavaScript</p></li>
+                <li><p>MongoDB</p></li>
+                <li><p>Mongoose</p></li>
+                <li><p>PostgreSQL</p></li>
+                <li><p>Node.js</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Frameworks & Services</h3>
+            <div class="framework">
+              <ul>
+                <li><p>React</p></li>
+                <li><p>Django</p></li>
+                <li><p>Express</p></li>
+                <li><p>Selenium</p></li>
+                <li><p>TestNG</p></li>
+                <li><p>POM and Data Driven</p></li>
+                <li><p>Google OAuth</p></li>
+                <li><p>JWT</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Tools & Methodologies</h3>
+            <div class="tool">
+              <ul>
+                <li><p>Git/GitHub</p></li>
+                <li><p>Maven</p></li>
+                <li><p>Postan</p></li>
+                <li><p>RESTful Routing</p></li>
+                <li><p>Agile</p></li>
+                <li><p>Scrum</p></li>
+                <li><p>Functional Testing</p></li>
+                <li><p>API Testing</p></li>
+                <li><p>Manual Testing</p></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <iconify-icon
+                icon="tabler:phone-filled"
+                style="color: green"
+              ></iconify-icon>
+              +1 (437) 669-3545
+            </p>
+            <div class="social-icons">
+              <a href="mailto:muguntharamkumar1996@gmail.com"
+                ><iconify-icon
+                  icon="logos:google-gmail"
+                  class="mail"
+                ></iconify-icon
+              ></a>
+              <a href="https://github.com/Muguntha96"
+                ><i class="fa-brands fa-github" style="color: #090101"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/muguntha-durairaj/"
+                ><i class="fa-brands fa-linkedin" style="color: #3477ea"></i
+              ></a>
+              <a href="https://leetcode.com/Muguntha/"
+                ><iconify-icon
+                  icon="simple-icons:leetcode"
+                  class="leet-code"
+                  style="color: black"
+                ></iconify-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <script>
-    let tabLinks=document.getElementsByClassName("tab-links")
-    let tabContents=document.getElementsByClassName("tab-contents")
-    
-    function openTab(tabName){
-      for(tabLink of tabLinks){
-        tabLink.classList.remove("active-link")
+    <script>
+      let tabLinks = document.getElementsByClassName("tab-links");
+      let tabContents = document.getElementsByClassName("tab-contents");
+
+      function openTab(tabName) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
       }
-      for(tabContent of tabContents){
-        tabContent.classList.remove("active-tab")
+    </script>
+    <script>
+      let sidemenu = document.getElementById("sidemenu");
+      function openMenu() {
+        sidemenu.style.right = "0";
       }
-      event.currentTarget.classList.add("active-link")
-      document.getElementById(tabName).classList.add("active-tab")
-    }
-  </script>
-  <script>
-    let sidemenu=document.getElementById("sidemenu")
-    function openMenu(){
-      sidemenu.style.right="0"
-    }
-    function closeMenu(){
-      sidemenu.style.right="-200px"
-    }
-  </script>
-</body>
+      function closeMenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
 </html>
